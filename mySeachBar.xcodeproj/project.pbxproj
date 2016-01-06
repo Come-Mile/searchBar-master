@@ -14,6 +14,12 @@
 		20BE1C931C3CCC530004FA3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BE1C921C3CCC530004FA3B /* Images.xcassets */; };
 		20BE1C961C3CCC530004FA3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20BE1C941C3CCC530004FA3B /* LaunchScreen.xib */; };
 		20BE1CA21C3CCC530004FA3B /* mySeachBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CA11C3CCC530004FA3B /* mySeachBarTests.m */; };
+		20BE1CB31C3CD6BD0004FA3B /* searchbar_textfield_search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BE1CB11C3CD6BD0004FA3B /* searchbar_textfield_search_icon.png */; };
+		20BE1CB41C3CD6BD0004FA3B /* searchbar_textfield_search_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BE1CB21C3CD6BD0004FA3B /* searchbar_textfield_search_icon@2x.png */; };
+		20BE1CB61C3CD8E40004FA3B /* searchbar_textfield_background_os7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BE1CB51C3CD8E40004FA3B /* searchbar_textfield_background_os7@2x.png */; };
+		20BE1CC31C3CDA250004FA3B /* IWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CC01C3CDA250004FA3B /* IWSearchBar.m */; };
+		20BE1CC41C3CDA250004FA3B /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CC21C3CDA250004FA3B /* UIImage+MJ.m */; };
+		20BE1CCB1C3CEDC00004FA3B /* searchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CCA1C3CEDC00004FA3B /* searchModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		20BE1C9B1C3CCC530004FA3B /* mySeachBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mySeachBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BE1CA01C3CCC530004FA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20BE1CA11C3CCC530004FA3B /* mySeachBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mySeachBarTests.m; sourceTree = "<group>"; };
+		20BE1CB11C3CD6BD0004FA3B /* searchbar_textfield_search_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbar_textfield_search_icon.png; sourceTree = "<group>"; };
+		20BE1CB21C3CD6BD0004FA3B /* searchbar_textfield_search_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbar_textfield_search_icon@2x.png"; sourceTree = "<group>"; };
+		20BE1CB51C3CD8E40004FA3B /* searchbar_textfield_background_os7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchbar_textfield_background_os7@2x.png"; sourceTree = "<group>"; };
+		20BE1CBF1C3CDA250004FA3B /* IWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWSearchBar.h; sourceTree = "<group>"; };
+		20BE1CC01C3CDA250004FA3B /* IWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWSearchBar.m; sourceTree = "<group>"; };
+		20BE1CC11C3CDA250004FA3B /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
+		20BE1CC21C3CDA250004FA3B /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
+		20BE1CC91C3CEDC00004FA3B /* searchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchModel.h; sourceTree = "<group>"; };
+		20BE1CCA1C3CEDC00004FA3B /* searchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,11 @@
 		20BE1C841C3CCC530004FA3B /* mySeachBar */ = {
 			isa = PBXGroup;
 			children = (
+				20BE1CC51C3CDA590004FA3B /* 自定义seachBar */,
+				20BE1CBE1C3CDA250004FA3B /* MJview */,
+				20BE1CB11C3CD6BD0004FA3B /* searchbar_textfield_search_icon.png */,
+				20BE1CB21C3CD6BD0004FA3B /* searchbar_textfield_search_icon@2x.png */,
+				20BE1CB51C3CD8E40004FA3B /* searchbar_textfield_background_os7@2x.png */,
 				20BE1C891C3CCC530004FA3B /* AppDelegate.h */,
 				20BE1C8A1C3CCC530004FA3B /* AppDelegate.m */,
 				20BE1C8C1C3CCC530004FA3B /* ViewController.h */,
@@ -117,6 +137,26 @@
 				20BE1CA01C3CCC530004FA3B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20BE1CBE1C3CDA250004FA3B /* MJview */ = {
+			isa = PBXGroup;
+			children = (
+				20BE1CBF1C3CDA250004FA3B /* IWSearchBar.h */,
+				20BE1CC01C3CDA250004FA3B /* IWSearchBar.m */,
+				20BE1CC11C3CDA250004FA3B /* UIImage+MJ.h */,
+				20BE1CC21C3CDA250004FA3B /* UIImage+MJ.m */,
+				20BE1CC91C3CEDC00004FA3B /* searchModel.h */,
+				20BE1CCA1C3CEDC00004FA3B /* searchModel.m */,
+			);
+			path = MJview;
+			sourceTree = "<group>";
+		};
+		20BE1CC51C3CDA590004FA3B /* 自定义seachBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "自定义seachBar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BE1C911C3CCC530004FA3B /* Main.storyboard in Resources */,
+				20BE1CB41C3CD6BD0004FA3B /* searchbar_textfield_search_icon@2x.png in Resources */,
 				20BE1C961C3CCC530004FA3B /* LaunchScreen.xib in Resources */,
+				20BE1CB31C3CD6BD0004FA3B /* searchbar_textfield_search_icon.png in Resources */,
+				20BE1CB61C3CD8E40004FA3B /* searchbar_textfield_background_os7@2x.png in Resources */,
 				20BE1C931C3CCC530004FA3B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BE1CC41C3CDA250004FA3B /* UIImage+MJ.m in Sources */,
 				20BE1C8E1C3CCC530004FA3B /* ViewController.m in Sources */,
+				20BE1CCB1C3CEDC00004FA3B /* searchModel.m in Sources */,
 				20BE1C8B1C3CCC530004FA3B /* AppDelegate.m in Sources */,
 				20BE1C881C3CCC530004FA3B /* main.m in Sources */,
+				20BE1CC31C3CDA250004FA3B /* IWSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
