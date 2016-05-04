@@ -43,10 +43,7 @@
         // 右边的清除按钮
 //        self.clearButtonMode = UITextFieldViewModeAlways;
         
-        // 设置提醒文字
-        NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-        attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
-        self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入关键字搜索" attributes:attrs];
+        
         
         // 设置键盘右下角按钮的样式
         self.returnKeyType = UIReturnKeySearch;
@@ -55,6 +52,14 @@
     return self;
 }
 
+- (void)setPlaceHoderStr:(NSString *)placeHoderStr
+{
+    _placeHoderStr = [placeHoderStr copy];
+    // 设置提醒文字
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeHoderStr attributes:attrs];
+}
 - (void)layoutSubviews
 {
     [super layoutSubviews];

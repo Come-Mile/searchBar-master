@@ -18,5 +18,7 @@
 + (instancetype)searchBar;
 
 @property (nonatomic , strong)searchModel *seachModel;
+@property (nonatomic , copy)NSString *placeHoderStr;
+
 @property (nonatomic ,weak)id<IWSearchBarDelegate>searchDelegate;
 @end

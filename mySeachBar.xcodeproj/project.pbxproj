@@ -20,6 +20,7 @@
 		20BE1CC31C3CDA250004FA3B /* IWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CC01C3CDA250004FA3B /* IWSearchBar.m */; };
 		20BE1CC41C3CDA250004FA3B /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CC21C3CDA250004FA3B /* UIImage+MJ.m */; };
 		20BE1CCB1C3CEDC00004FA3B /* searchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE1CCA1C3CEDC00004FA3B /* searchModel.m */; };
+		20DA87861C92AA7C00AE8A7D /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DA87851C92AA7C00AE8A7D /* NavigationBarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		20BE1CC21C3CDA250004FA3B /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
 		20BE1CC91C3CEDC00004FA3B /* searchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchModel.h; sourceTree = "<group>"; };
 		20BE1CCA1C3CEDC00004FA3B /* searchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchModel.m; sourceTree = "<group>"; };
+		20DA87841C92AA7C00AE8A7D /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
+		20DA87851C92AA7C00AE8A7D /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 		20BE1CBE1C3CDA250004FA3B /* MJview */ = {
 			isa = PBXGroup;
 			children = (
+				20DA87841C92AA7C00AE8A7D /* NavigationBarView.h */,
+				20DA87851C92AA7C00AE8A7D /* NavigationBarView.m */,
 				20BE1CBF1C3CDA250004FA3B /* IWSearchBar.h */,
 				20BE1CC01C3CDA250004FA3B /* IWSearchBar.m */,
 				20BE1CC11C3CDA250004FA3B /* UIImage+MJ.h */,
@@ -268,6 +273,7 @@
 				20BE1C8B1C3CCC530004FA3B /* AppDelegate.m in Sources */,
 				20BE1C881C3CCC530004FA3B /* main.m in Sources */,
 				20BE1CC31C3CDA250004FA3B /* IWSearchBar.m in Sources */,
+				20DA87861C92AA7C00AE8A7D /* NavigationBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +468,7 @@
 				20BE1CA71C3CCC530004FA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20BE1CA81C3CCC530004FA3B /* Build configuration list for PBXNativeTarget "mySeachBarTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				20BE1CAA1C3CCC530004FA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

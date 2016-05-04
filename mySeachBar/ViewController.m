@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "IWSearchBar.h"
 #import "searchModel.h"
+#import "NavigationBarView.h"
+
 
 @interface ViewController ()<UITableViewDataSource , UITableViewDelegate,UITextFieldDelegate,IWSearchBarDelegate>
 @property (nonatomic , weak)UITableView *myTab;
@@ -19,12 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-   
+    NavigationBarView *nav = [[NavigationBarView alloc]init];
+    [nav setController:self];
+    [nav.titleLabel removeFromSuperview];
+    
+    
     [self setUpSeachBar];
     [self setUpMyTab];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick)];
     [self.view addGestureRecognizer:tap];
+    
+    [nav addSubview:self.mySearchBar];
+    
 }
 #pragma mark 初始化控件
 - (void)setUpMyTab
@@ -34,15 +42,15 @@
     tab.delegate = self;
     self.myTab = tab;
     [self.view addSubview:self.myTab];
-   
 }
 
 - (void)setUpSeachBar
 {
     IWSearchBar *searchBar = [IWSearchBar searchBar];
+   searchBar.placeHoderStr = @"haha";
     self.mySearchBar = searchBar;
     // 尺寸
-    searchBar.frame = CGRectMake(10, 60, self.view.frame.size.width-20,45);
+    searchBar.frame = CGRectMake(10, 10, self.view.frame.size.width-20,44);
     searchBar.delegate =self;
     searchBar.searchDelegate = self;
     // 设置中间的标题内容
@@ -62,12 +70,10 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"1---搜索开始");
-    
     searchModel *seaModel = [[searchModel alloc]init];
     seaModel.searchText = textField.text;
     self.mySearchBar.seachModel = seaModel;
     [self.mySearchBar resignFirstResponder];
-    //do something what you want
     
     return YES;
 }

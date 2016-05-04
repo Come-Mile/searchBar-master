@@ -29,9 +29,6 @@
         self.linView = [[UIView alloc]initWithFrame:CGRectMake(0, 43, self.frame.size.width, 1)];
     }
     self.backgroundColor = [UIColor whiteColor];
-//    self.backgroundColor = [UIColor colorWithRed:131/255.0 green:55/255.0 blue:179/255.0 alpha:1.0];
-    
-//    self.backgroundColor = [UIColor colorWithRed:32/255.0 green:170/255.0 blue:232/255.0 alpha:1.0];
     
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.textColor = [UIColor blackColor];
